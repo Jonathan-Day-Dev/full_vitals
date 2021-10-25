@@ -1,11 +1,19 @@
 <template>
-    <h1>This is the App.vue file</h1>
+  <Navbar />
+  <h1 id="title">This is the App.vue file</h1>
 </template>
 
 <script>
-export default {}
+import Navbar from "./nav/Navbar.vue";
+export default {
+  components: {
+    Navbar,
+  },
+};
 </script>
 
-<style scoped>
-
+<style>
+#title {
+  @apply text-3xl text-red-500 mt-28;
+}
 </style>
