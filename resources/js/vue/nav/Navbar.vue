@@ -1,18 +1,20 @@
 <template>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">References</a>
-        <a href="#">Guides</a>
-        <a href="#">Sequences</a>
-        <a href="#">Arcitectures</a>
-        <a href="#">API</a>
-        <a href="#">Entities</a>
-        <a href="#">Wireframes</a>
+        <a href="/">Home</a>
+        <a href="/ref">References</a>
+        <a href="/guide">Guides</a>
+        <a href="/seq">Sequences</a>
+        <a href="/arcitecture">Arcitectures</a>
+        <a href="/vitals_api">API</a>
+        <a href="/entities">Entities</a>
+        <a href="/wireframes">Wireframes</a>
     </nav>
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
 <style scoped>

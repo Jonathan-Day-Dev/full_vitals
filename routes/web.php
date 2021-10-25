@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RefController;
+use App\Http\Controllers\GuideController;
+use App\Http\Controllers\SeqController;
+use App\Http\Controllers\ArcitectureController;
+use App\Http\Controllers\ApiController;
+use App\Http\Controllers\EntitiesController;
+use App\Http\Controllers\WireframesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +23,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resources([
+    'ref' => RefController::class,
+    'guide' => GuideController::class,
+    'seq' => SeqController::class,
+    'arcitecture' => ArcitectureController::class,
+    'vitals_api' => ApiController::class,
+    'entities' => EntitiesController::class,
+    'wireframes' => WireframesController::class
+]);

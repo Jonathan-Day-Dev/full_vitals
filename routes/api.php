@@ -25,3 +25,5 @@ Route::prefix('/step')->group(function() {
     Route::put('/{id}', [StepModelController::class, 'update']);
     Route::delete('/{id}', [StepModelController::class, 'destroy']);
 });
+
+Route::get('/test', [StepModelController::class, 'testing']);

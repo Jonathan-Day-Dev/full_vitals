@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\StepModel;
 
-class StepModelController extends Controller
+class GuideController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class StepModelController extends Controller
      */
     public function index()
     {
-        return StepModel::orderBy('stepNum', 'ASC')->get();
+        return "This is coming from the index() method inside the GuideController";
     }
 
     /**
@@ -35,12 +34,7 @@ class StepModelController extends Controller
      */
     public function store(Request $request)
     {
-        $newStep = new StepModel();
-        $newStep->title = $request->step['title'];
-        $newStep->stepNum = $request->step['stepNum'];
-        $newStep->desc = $request->step['desc'];
-        $newStep->save();
-        return $newStep;
+        //
     }
 
     /**
@@ -74,15 +68,7 @@ class StepModelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $existingStep = StepModel::find($id);
-        if ($existingStep) {
-            $existingStep->title = $request->step['title'];
-            $existingStep->stepNum = $request->step['stepNum'];
-            $existingStep->desc = $request->step['desc'];
-            $existingStep->save();
-            return $existingStep;
-        }
-        return "Step Not Found";
+        //
     }
 
     /**
@@ -93,15 +79,6 @@ class StepModelController extends Controller
      */
     public function destroy($id)
     {
-        $existingStep = StepModel::find($id);
-        if ($existingStep) {
-            $existingStep->delete();
-            return "Step Deleted Successfully";
-        }
-        return "Couldn't Find Step";
-    }
-
-    public function testing() {
-        echo "Hello, this is my testing() function in the StepModelController.php";
+        //
     }
 }
