@@ -13,7 +13,7 @@ class RefController extends Controller
      */
     public function index()
     {
-        return "This is being shown from the index() method inside the RefController.php file";
+        //
     }
 
     /**

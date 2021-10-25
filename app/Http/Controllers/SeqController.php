@@ -13,7 +13,7 @@ class SeqController extends Controller
      */
     public function index()
     {
-        return "This is coming from the index() method inside of the SeqController.php file.";
+        //
     }
 
     /**

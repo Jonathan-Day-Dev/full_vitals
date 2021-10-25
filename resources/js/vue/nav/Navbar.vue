@@ -1,13 +1,13 @@
 <template>
     <nav>
-        <a href="/">Home</a>
-        <a href="/ref">References</a>
-        <a href="/guide">Guides</a>
-        <a href="/seq">Sequences</a>
-        <a href="/arcitecture">Arcitectures</a>
-        <a href="/vitals_api">API</a>
-        <a href="/entities">Entities</a>
-        <a href="/wireframes">Wireframes</a>
+        <router-link to="/">Home</router-link>
+        <router-link to="/ref">References</router-link>
+        <router-link to="/guide">Guides</router-link>
+        <router-link to="/seq">Sequences</router-link>
+        <router-link to="/arcitecture">Arcitectures</router-link>
+        <router-link to="/vitals_api">API</router-link>
+        <router-link to="/entities">Entities</router-link>
+        <router-link to="/wireframes">Wireframes</router-link>
     </nav>
 </template>
 

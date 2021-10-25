@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <router-view></router-view>
+  <h1>This is Home.vue</h1>
 </template>
 
 <script>
@@ -12,8 +12,8 @@ export default {
 };
 </script>
 
-<style>
-#title {
-  @apply text-3xl text-red-500 mt-28;
+<style scoped>
+h1 {
+  @apply mt-32;
 }
 </style>
