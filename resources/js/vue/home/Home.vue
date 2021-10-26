@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Navbar from "./nav/Navbar.vue";
+import Navbar from "../nav/Navbar.vue";
 export default {
   components: {
     Navbar,
@@ -14,6 +14,6 @@ export default {
 
 <style scoped>
 h1 {
-  @apply mt-32;
+  @apply mt-32 text-2xl;
 }
 </style>

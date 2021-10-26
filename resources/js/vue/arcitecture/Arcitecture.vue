@@ -13,6 +13,6 @@ export default {
 
 <style scoped>
 h1 {
-    @apply mt-32;
+    @apply mt-32 text-2xl;
 }
 </style>

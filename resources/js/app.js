@@ -6,7 +6,7 @@ import '../css/app.css';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import App from './vue/App.vue';
-import Home from './vue/Home.vue';
+import Home from './vue/home/Home.vue';
 import Reference from './vue/ref/Reference.vue';
 import Guide from './vue/guide/Guide.vue';
 import Sequence from './vue/seq/Sequence.vue';
@@ -36,9 +36,11 @@ app.use(router);
 app.mount('#app');
 
 createInertiaApp({
+    id: "app",
     resolve: name => require(`./vue/${name}`),
-    setup({ el, app, props }) {
+    setup({ el, app, props, plugin }) {
         Vue.createApp({ render: () => Vue.h(app, props) })
+            .use(plugin)
             .mount(el)
     }
 });
